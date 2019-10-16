@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33013283-fea2-4e7e-b0cb-5f0a17e34609" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/BullsAndCows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AccentureJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AccentureJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/BullsAndCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/BullsAndCows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +58,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
