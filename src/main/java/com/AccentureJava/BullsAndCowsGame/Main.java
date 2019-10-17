@@ -1,7 +1,9 @@
 package com.AccentureJava.BullsAndCowsGame;
 
+import java.util.HashSet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
 
@@ -13,10 +15,10 @@ public class Main {
         BullsAndCows game = new BullsAndCows(difficulty);
 
         while (!game.isGameEnded()) {
-            System.out.println("Введите число: ");
+            System.out.println("Введите число длиной "+difficulty+": ");
 
-            String inputData;
-            String playerNumber = "";
+            String inputData; 
+            String playerNumber;
 
             while (true) {
                 inputData = scanner.nextLine();
@@ -31,12 +33,20 @@ public class Main {
                 System.out.println(playerNumber.length());
 
                 if (playerNumber.length() == difficulty || playerNumber.equals("1")) {
-                    break;
+                    if (!hasDublicates(playerNumber)) {
+                        break;
+                    }
+                    else {
+                        System.err.println("Ошибка. Все цифры должны быть уникальными");
+                        continue;
+                    }
                 }
                 else {
                     System.err.println("Oшибка. Введите число длиной "+difficulty+", или 1 - чтобы сдаться");
                     continue;
                 }
+
+
             }
             game.playTheGame(playerNumber);
         }
@@ -51,7 +61,14 @@ public class Main {
             return false;
         }
     }
- 
+
+    private static boolean hasDublicates(String playerNumber) {
+        Set<Character> uniqueDigits = new HashSet<>();
+        for (Character symbol: playerNumber.toCharArray()) {
+            uniqueDigits.add(symbol);
+        }
+        return uniqueDigits.size() < playerNumber.length();
+    }
 
     private static void chooseDifficulty() {
         Scanner scanner = new Scanner(System.in);
