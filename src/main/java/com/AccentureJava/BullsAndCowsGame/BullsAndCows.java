@@ -35,7 +35,7 @@ public class BullsAndCows {
         }
     }
 
-    private int determineTheNumberOfCows(String playerNumber) {
+    private int determineCountOfCows(String playerNumber) {
 
         int cowsCount = 0;
         for (int i = 0; i < difficulty; i++) {
@@ -48,11 +48,11 @@ public class BullsAndCows {
         return cowsCount;
 
     }
-    private int determineTheNumberOfBulls(String playerNumber) {
+    private int determineCountOfBulls(String playerNumber) {
         int bullsCount = 0;
         for (int i = 0; i < difficulty; i++) {
             if (computerNumber.charAt(i) == playerNumber.charAt(i)) {
-                bullsCount++;
+            bullsCount++;
             }
         }
         return bullsCount;
@@ -66,12 +66,13 @@ public class BullsAndCows {
         }
         else if (playerNumber.equals(computerNumber.toString())) {
             isGameEnded = true;
+            countTries++;
             System.out.println("Вы выиграли!");
             System.out.println("Количество попыток: "+countTries);
         }
         else {
-            System.out.println("Количество быков: " + determineTheNumberOfBulls(playerNumber));
-            System.out.println("Количество коров: " + determineTheNumberOfCows(playerNumber));
+            System.out.println("Количество быков: " + determineCountOfBulls(playerNumber));
+            System.out.println("Количество коров: " + determineCountOfCows(playerNumber));
             System.out.println("Не угадали, попытайтесь еще");
             System.out.println("Вы можете сдаться, введя 1");
             countTries++;
