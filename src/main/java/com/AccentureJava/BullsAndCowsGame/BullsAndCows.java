@@ -13,10 +13,8 @@ public class BullsAndCows {
 
     public BullsAndCows(int difficulty) {
         this.difficulty = difficulty;
-        countTries = 0;
-        isGameEnded = false;
         computerNumber = new StringBuilder();
-        generateNumber();;
+        generateNumber();
     }
 
     public boolean isGameEnded() {

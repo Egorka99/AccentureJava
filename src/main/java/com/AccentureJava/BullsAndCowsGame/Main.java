@@ -7,11 +7,11 @@ import java.util.Set;
 
 public class Main {
 
-    private static int difficulty;
+    //private static int difficulty;
 
     private static void playTheGame() {
         Scanner scanner = new Scanner(System.in);
-        chooseDifficulty();
+        int difficulty = chooseDifficulty();
         BullsAndCows game = new BullsAndCows(difficulty);
 
         while (!game.isGameEnded()) {
@@ -66,10 +66,10 @@ public class Main {
         return uniqueDigits.size() < playerNumber.length();
     }
 
-    private static void chooseDifficulty() {
+    private static int chooseDifficulty() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Выберите сложность игры (3,4,5)");
-
+        int difficulty = 0;
 
         while (difficulty !=3 && difficulty !=4 && difficulty !=5) {
 
@@ -95,6 +95,8 @@ public class Main {
             }
 
         }
+
+        return difficulty;
     }
 
     private static void startTheGame() {
