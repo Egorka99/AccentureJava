@@ -1,5 +1,6 @@
 package com.AccentureJava.FilmsProject;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class Film {
     private Date releaseDate;
     private double rating;
     private String description;
-    private List<Review> reviewList;
+    public List<Review> reviewList;
     private FilmStorage filmStorage = new FilmStorage();
 
     public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
@@ -27,6 +28,8 @@ public class Film {
         this.description = description;
 
         filmStorage.addNewFilm(this);
+
+        reviewList = new ArrayList<>();
     }
 
     private boolean isUniqueIdentifier(String imdbIdentifier) {
@@ -66,7 +69,5 @@ public class Film {
         return description;
     }
 
-    public List<Review> getReview() {
-        return reviewList;
-    }
+
 }

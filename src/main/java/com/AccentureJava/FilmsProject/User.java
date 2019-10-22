@@ -1,8 +1,12 @@
 package com.AccentureJava.FilmsProject;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class User extends Person {
-    private boolean isLogIn;
     private UserStorage userStorage = new UserStorage();;
+    private FilmStorage filmStorage = new FilmStorage();
 
     public User() {
     }
@@ -30,12 +34,12 @@ public class User extends Person {
              for(User user: userStorage.getUsers()) {
                  if(user.login.equals(this.login) && user.password.equals(this.password)){
                      this.name = user.name;
-                     isLogIn = true;
                      System.out.println("User sign in successfully");
                      return;
                  }
              }
              System.out.println("User sign in failed");
+             //TODO Дублирование
          }
          else {
              System.out.println("User sign in failed");
@@ -43,7 +47,7 @@ public class User extends Person {
          //TODO Логгирование или убрать sout
      }
 
-     public void signUp(String userName,String userLogin, String userPassword) {
+    public void signUp(String userName,String userLogin, String userPassword) {
          if (!isExistLogin(userLogin)) {
              User user = new User(userName,userLogin,userPassword);
              userStorage.addNewUser(user);
@@ -52,10 +56,47 @@ public class User extends Person {
          else {
              System.out.println("User sign up failed");
          }
-     }
-    @Override
-    protected void logOut() {
-        super.logOut();
-        isLogIn = false;
     }
+
+    public void writeReview(String imdbIdentifier, String reviewText, double rating) {
+        Date currentDate = new Date();
+        Review review = new Review(currentDate,this,reviewText,rating);
+
+        for (Film currentFilm: filmStorage.getFilms()) {
+            if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
+                currentFilm.reviewList.add(review);
+            }
+        }
+    }
+
+    public List<Film> searchFilmByIdentifier(String imdbIdentifier) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
+
+    public List<Film> searchFilmByTitle(String title) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getTitle().equals(title)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
+
+    public List<Film> searchFilmByReleaseDate(Date releaseDate) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getReleaseDate().equals(releaseDate)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
+
 }

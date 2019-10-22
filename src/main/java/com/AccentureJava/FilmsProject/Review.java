@@ -7,24 +7,20 @@ public class Review {
 
     private int ReviewId;
     private Date createDate;
-    private User author;
+    private  Person author;
     private String reviewText;
     private double Rating;
 
-    public Review(int reviewId, Date createDate, User author, String reviewText, double rating) {
-        ReviewId = reviewId;
+    public Review( Date createDate, Person author, String reviewText, double rating) {
         this.createDate = createDate;
         this.author = author;
         this.reviewText = reviewText;
         Rating = rating;
+        ReviewId = maxId+1;
+        maxId++;
     }
 
     public int getReviewId() {
         return ReviewId;
-    }
-
-    public Review() {
-        ReviewId = maxId+1;
-        maxId++;
     }
 }
