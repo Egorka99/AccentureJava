@@ -2,9 +2,11 @@ package com.AccentureJava.FilmsProject.Controller;
 
 import com.AccentureJava.FilmsProject.Model.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-public class FilmOperation { 
+public class FilmOperation {
 
     private FilmStorage filmStorage = (FilmStorage) FilmStorage.getInstance();
 
@@ -54,9 +56,36 @@ public class FilmOperation {
             }
         }
         return false;
-
     }
 
+    public List<Film> searchFilmByIdentifier(String imdbIdentifier) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
 
+    public List<Film> searchFilmByTitle(String title) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getTitle().equals(title)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
+
+    public List<Film> searchFilmByReleaseDate(Date releaseDate) {
+        List<Film> foundFilmsList = new ArrayList<>();
+        for (Film currentFilm : filmStorage.getFilms()) {
+            if (currentFilm.getReleaseDate().equals(releaseDate)) {
+                foundFilmsList.add(currentFilm);
+            }
+        }
+        return foundFilmsList;
+    }
 
 }

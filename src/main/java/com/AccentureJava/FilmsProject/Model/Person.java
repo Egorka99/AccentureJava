@@ -11,5 +11,15 @@ public abstract class Person {
         password = null;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }

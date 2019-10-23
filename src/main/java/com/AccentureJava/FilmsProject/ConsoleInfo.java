@@ -1,16 +1,11 @@
 package com.AccentureJava.FilmsProject;
 
 import com.AccentureJava.FilmsProject.Model.Film;
-import com.AccentureJava.FilmsProject.Model.User;
 
 import java.util.List;
 
 
-public class UserConsoleInfo extends User {
-
-    public UserConsoleInfo(String userName, String userLogin, String userPassword) {
-        super(userName, userLogin, userPassword);
-    }
+public class ConsoleInfo {
 
     public void getInfo(Film film){
         System.out.printf("---Фильм № %s--- \n" +
