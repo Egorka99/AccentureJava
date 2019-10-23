@@ -4,9 +4,9 @@ import com.AccentureJava.FilmsProject.Model.*;
 
 import java.util.Date;
 
-public class FilmOperation {
+public class FilmOperation { 
 
-    private FilmStorage filmStorage = new FilmStorage();
+    private FilmStorage filmStorage = (FilmStorage) FilmStorage.getInstance();
 
     public boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) {
         Date currentDate = new Date();

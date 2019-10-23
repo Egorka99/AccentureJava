@@ -14,13 +14,10 @@ public class Film {
     private double rating;
     private String description;
     private List<Review> reviewList;
-    private List<newFilmListener> listeners = new ArrayList<newFilmListener>();
+    private List<newFilmListener> listeners = new ArrayList<>();
 
     public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
         this.title = title;
-//        if (!isUniqueIdentifier(imdbIdentifier)) {
-//            throw new IllegalArgumentException("Imdb идентификатор должен быть уникальным");
-//        }
         this.imdbIdentifier = imdbIdentifier;
         this.filmType = filmType;
         this.genre = genre;
@@ -29,7 +26,7 @@ public class Film {
         this.description = description;
 
         for (newFilmListener listener : listeners)
-            listener.newFilmCreated(this); 
+            listener.newFilmCreated(this);
 
         reviewList = new ArrayList<>();
     }
@@ -38,14 +35,6 @@ public class Film {
         listeners.add(listener);
     }
 
-//    private boolean isUniqueIdentifier(String imdbIdentifier) {
-//        for (Film film: filmStorage.getFilms()) {
-//            if (film.imdbIdentifier.equals(imdbIdentifier)) {
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
 
     public String getTitle() {
         return title;
