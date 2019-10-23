@@ -1,4 +1,4 @@
-package com.AccentureJava.FilmsProject;
+package com.AccentureJava.FilmsProject.Model;
 
 public abstract class Person {
     protected String name;

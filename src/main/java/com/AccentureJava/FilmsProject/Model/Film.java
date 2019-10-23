@@ -1,4 +1,4 @@
-package com.AccentureJava.FilmsProject;
+package com.AccentureJava.FilmsProject.Model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -12,14 +12,14 @@ public class Film {
     private Date releaseDate;
     private double rating;
     private String description;
-    public List<Review> reviewList;
-    private FilmStorage filmStorage = new FilmStorage();
+    private List<Review> reviewList;
+//    private FilmStorage filmStorage = new FilmStorage();
 
     public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
         this.title = title;
-        if (!isUniqueIdentifier(imdbIdentifier)) {
-            throw new IllegalArgumentException("Imdb идентификатор должен быть уникальным");
-        }
+//        if (!isUniqueIdentifier(imdbIdentifier)) {
+//            throw new IllegalArgumentException("Imdb идентификатор должен быть уникальным");
+//        }
         this.imdbIdentifier = imdbIdentifier;
         this.filmType = filmType;
         this.genre = genre;
@@ -27,19 +27,19 @@ public class Film {
         this.rating = rating;
         this.description = description;
 
-        filmStorage.addNewFilm(this);
+//        filmStorage.addNewFilm(this); 
 
         reviewList = new ArrayList<>();
     }
 
-    private boolean isUniqueIdentifier(String imdbIdentifier) {
-        for (Film film: filmStorage.getFilms()) {
-            if (film.imdbIdentifier.equals(imdbIdentifier)) {
-                return false;
-            }
-        }
-        return true;
-    }
+//    private boolean isUniqueIdentifier(String imdbIdentifier) {
+//        for (Film film: filmStorage.getFilms()) {
+//            if (film.imdbIdentifier.equals(imdbIdentifier)) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 
     public String getTitle() {
         return title;
@@ -67,6 +67,25 @@ public class Film {
 
     public String getDescription() {
         return description;
+    }
+
+    public List<Review> getReviewList() {
+        return reviewList;
+    }
+    public Review getReviewFromListByIndex(int index) {
+        return reviewList.get(index);
+    }
+
+    public void addReviewInList(Review review) {
+       reviewList.add(review);
+    }
+
+    public void replaceReview(int index,Review review) {
+       reviewList.set(index,review);
+    }
+
+    public void removeReviewFromList(int index) {
+        reviewList.remove(index);
     }
 
 

@@ -72,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Main" />
-      <module name="AccentureJava" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.BullsAndCowsGame.Main" />
+      <module name="Tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AccentureJava.FilmsProject.*" />
+          <option name="PATTERN" value="com.AccentureJava.BullsAndCowsGame.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,11 +86,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.BullsAndCowsGame.Main" />
-      <module name="Tasks" />
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Main" />
+      <module name="AccentureJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AccentureJava.BullsAndCowsGame.*" />
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.Model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

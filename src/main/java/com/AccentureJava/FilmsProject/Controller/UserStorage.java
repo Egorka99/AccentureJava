@@ -1,4 +1,6 @@
-package com.AccentureJava.FilmsProject;
+package com.AccentureJava.FilmsProject.Controller;
+
+import com.AccentureJava.FilmsProject.Model.User;
 
 import java.util.ArrayList;
 import java.util.List;

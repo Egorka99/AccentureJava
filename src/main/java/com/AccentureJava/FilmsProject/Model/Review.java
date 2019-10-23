@@ -1,4 +1,6 @@
-package com.AccentureJava.FilmsProject;
+package com.AccentureJava.FilmsProject.Model;
+
+import com.AccentureJava.FilmsProject.Model.Person;
 
 import java.util.Date;
 
@@ -7,7 +9,7 @@ public class Review {
 
     private int ReviewId;
     private Date createDate;
-    private  Person author;
+    private Person author;
     private String reviewText;
     private double Rating;
 

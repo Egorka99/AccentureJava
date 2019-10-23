@@ -1,5 +1,8 @@
 package com.AccentureJava.FilmsProject;
 
+import com.AccentureJava.FilmsProject.Controller.FilmStorage;
+import com.AccentureJava.FilmsProject.Model.*;
+
 import java.util.Calendar;
 import java.util.Date;
 
@@ -16,7 +19,7 @@ public class Main {
     public static void filmStorageTest() {
         Date date = new Date(2019, Calendar.AUGUST,13);
 
-        Film newFilm = new Film("Marvel Avengers","wadq213213",FilmType.FILM,"Action",
+        Film newFilm = new Film("Marvel Avengers","wadq213213", FilmType.FILM,"Action",
                 date, 8.1,"Marvel Film");
         Film newFilm2 = new Film("Marvel Avengers: Infinity War","waddq213213",FilmType.FILM,"Action",
                 date, 8.1,"Marvel Film");
