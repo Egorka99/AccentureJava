@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 public class Film {
     private String title;
     private String imdbIdentifier;
@@ -13,7 +14,7 @@ public class Film {
     private double rating;
     private String description;
     private List<Review> reviewList;
-//    private FilmStorage filmStorage = new FilmStorage();
+    private List<newFilmListener> listeners = new ArrayList<newFilmListener>();
 
     public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
         this.title = title;
@@ -27,9 +28,14 @@ public class Film {
         this.rating = rating;
         this.description = description;
 
-//        filmStorage.addNewFilm(this); 
+        for (newFilmListener listener : listeners)
+            listener.newFilmCreated(this); 
 
         reviewList = new ArrayList<>();
+    }
+
+    public void addListener(newFilmListener listener) {
+        listeners.add(listener);
     }
 
 //    private boolean isUniqueIdentifier(String imdbIdentifier) {
