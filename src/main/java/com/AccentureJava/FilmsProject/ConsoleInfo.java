@@ -1,9 +1,11 @@
 package com.AccentureJava.FilmsProject;
 
+import com.AccentureJava.FilmsProject.Model.Film;
+
 import java.util.List;
 
 
-public class UserConsoleInfo extends User {
+public class ConsoleInfo {
 
     public void getInfo(Film film){
         System.out.printf("---Фильм № %s--- \n" +
@@ -25,6 +27,8 @@ public class UserConsoleInfo extends User {
                 System.out.println();
             }
     }
+
+    //TODO Информация о ревью
 
 
 }
