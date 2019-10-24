@@ -41,7 +41,7 @@
   <component name="ProjectId" id="1SGnkQwB8MKBF6C66mZFARjV7W1" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FTP-Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Learn" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,6 +66,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AccentureJava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Main" />
+      <module name="AccentureJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

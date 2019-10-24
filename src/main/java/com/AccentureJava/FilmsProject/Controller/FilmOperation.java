@@ -8,9 +8,9 @@ import java.util.List;
 
 public class FilmOperation {
 
-    private FilmStorage filmStorage = (FilmStorage) FilmStorage.getInstance();
+    private static FilmStorage filmStorage = FilmStorage.getInstance();
 
-    public boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) {
+    public static boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) {
         Date currentDate = new Date();
         Review review = new Review(currentDate,user,reviewText,rating);
 
@@ -23,9 +23,9 @@ public class FilmOperation {
         return false;
     }
 
-    public boolean updateReview(String imdbIdentifier, Admin admin, int oldReviewId, String reviewText, double rating) {
+    public static boolean updateReview(String imdbIdentifier, Admin author, int oldReviewId, String reviewText, double rating) {
         Date currentDate = new Date();
-        Review review = new Review(currentDate,admin,reviewText,rating);
+        Review review = new Review(currentDate,author,reviewText,rating);
 
         for (Film currentFilm: filmStorage.getFilms()) {
         if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
@@ -41,9 +41,9 @@ public class FilmOperation {
         return false;
     }
 
-    public boolean deleteReview(String imdbIdentifier, Admin admin, int reviewId) {
+    public static boolean deleteReview(String imdbIdentifier, Admin author, int reviewId) {
 
-        if (admin != null) {
+        if (author != null) {
             for (Film currentFilm: filmStorage.getFilms()) {
                 if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
                     for (int i = 0; i < currentFilm.getReviewList().size(); i++) {
@@ -58,27 +58,27 @@ public class FilmOperation {
         return false;
     }
 
-    public List<Film> searchFilmByIdentifier(String imdbIdentifier) {
+    public static List<Film> searchFilmByIdentifier(String imdbIdentifier) {
         List<Film> foundFilmsList = new ArrayList<>();
         for (Film currentFilm : filmStorage.getFilms()) {
-            if (currentFilm.getImdbIdentifier().equals(imdbIdentifier)) {
+            if (currentFilm.getImdbIdentifier().contains(imdbIdentifier)) {
                 foundFilmsList.add(currentFilm);
             }
         }
         return foundFilmsList;
     }
 
-    public List<Film> searchFilmByTitle(String title) {
+    public static List<Film> searchFilmByTitle(String title) {
         List<Film> foundFilmsList = new ArrayList<>();
         for (Film currentFilm : filmStorage.getFilms()) {
-            if (currentFilm.getTitle().equals(title)) {
+            if (currentFilm.getTitle().contains(title)) {
                 foundFilmsList.add(currentFilm);
             }
         }
         return foundFilmsList;
     }
 
-    public List<Film> searchFilmByReleaseDate(Date releaseDate) {
+    public static List<Film> searchFilmByReleaseDate(Date releaseDate) {
         List<Film> foundFilmsList = new ArrayList<>();
         for (Film currentFilm : filmStorage.getFilms()) {
             if (currentFilm.getReleaseDate().equals(releaseDate)) {

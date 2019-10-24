@@ -2,11 +2,22 @@ package com.AccentureJava.FilmsProject.Controller;
 
 import com.AccentureJava.FilmsProject.Model.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.TreeSet;
 
-public class FilmStorage extends Singleton implements newFilmListener{
-    private static List<Film> listOfFilms = new ArrayList<>();
+public class FilmStorage {
+
+    private static TreeSet<Film> listOfFilms = new TreeSet<>(new FilmRatingComparator());
+
+    private static FilmStorage instance;
+
+    private FilmStorage(){
+    }
+
+    public static FilmStorage getInstance() {
+        if (instance == null)
+            instance = new FilmStorage();
+        return instance;
+    }
 
     private boolean isUniqueIdentifier(Film film) {
         for (Film currentFilm : listOfFilms) {
@@ -17,22 +28,16 @@ public class FilmStorage extends Singleton implements newFilmListener{
         return true;
     }
 
-    private FilmStorage() {
-        super();
-    }
-
-    public void addNewFilm(Film film) {
+    public boolean addNewFilm(Film film) {
         if (isUniqueIdentifier(film)) {
             listOfFilms.add(film);
+            return true;
         }
+        return false;
     }
 
-    public List<Film> getFilms() {
+    public TreeSet<Film> getFilms() {
         return listOfFilms;
     }
 
-    @Override
-    public void newFilmCreated(Film film) {
-        listOfFilms.add(film);
-    }
 }

@@ -14,7 +14,6 @@ public class Film {
     private double rating;
     private String description;
     private List<Review> reviewList;
-    private List<newFilmListener> listeners = new ArrayList<>();
 
     public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
         this.title = title;
@@ -25,16 +24,8 @@ public class Film {
         this.rating = rating;
         this.description = description;
 
-        for (newFilmListener listener : listeners)
-            listener.newFilmCreated(this);
-
         reviewList = new ArrayList<>();
     }
-
-    public void addListener(newFilmListener listener) {
-        listeners.add(listener);
-    }
-
 
     public String getTitle() {
         return title;

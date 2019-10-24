@@ -22,6 +22,22 @@ public class Review {
         maxId++;
     }
 
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public Person getAuthor() {
+        return author;
+    }
+
+    public String getReviewText() {
+        return reviewText;
+    }
+
+    public double getRating() {
+        return Rating;
+    }
+
     public int getReviewId() {
         return ReviewId;
     }

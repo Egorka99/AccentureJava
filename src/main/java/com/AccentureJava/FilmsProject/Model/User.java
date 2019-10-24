@@ -1,5 +1,6 @@
 package com.AccentureJava.FilmsProject.Model;
 
+
 public class User extends Person {
 
     public User(String userName, String userLogin, String userPassword) {
@@ -7,5 +8,7 @@ public class User extends Person {
         this.login = userLogin;
         this.password = userPassword;
     }
+
+    public User() {}
 
 }
