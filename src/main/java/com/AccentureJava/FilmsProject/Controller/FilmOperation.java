@@ -60,7 +60,7 @@ public class FilmOperation {
 
     public static List<Film> searchFilmByIdentifier(String imdbIdentifier) {
         List<Film> foundFilmsList = new ArrayList<>();
-        for (Film currentFilm : filmStorage.getFilms()) {
+        for (Film currentFilm : filmStorage.getSortFilms()) {
             if (currentFilm.getImdbIdentifier().contains(imdbIdentifier)) {
                 foundFilmsList.add(currentFilm);
             }
@@ -70,7 +70,7 @@ public class FilmOperation {
 
     public static List<Film> searchFilmByTitle(String title) {
         List<Film> foundFilmsList = new ArrayList<>();
-        for (Film currentFilm : filmStorage.getFilms()) {
+        for (Film currentFilm : filmStorage.getSortFilms()) {
             if (currentFilm.getTitle().contains(title)) {
                 foundFilmsList.add(currentFilm);
             }
@@ -80,7 +80,7 @@ public class FilmOperation {
 
     public static List<Film> searchFilmByReleaseDate(Date releaseDate) {
         List<Film> foundFilmsList = new ArrayList<>();
-        for (Film currentFilm : filmStorage.getFilms()) {
+        for (Film currentFilm : filmStorage.getSortFilms()) {
             if (currentFilm.getReleaseDate().equals(releaseDate)) {
                 foundFilmsList.add(currentFilm);
             }

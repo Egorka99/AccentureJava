@@ -15,7 +15,8 @@ public class Film {
     private String description;
     private List<Review> reviewList;
 
-    public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating, String description) {
+    public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating,
+                String description) {
         this.title = title;
         this.imdbIdentifier = imdbIdentifier;
         this.filmType = filmType;

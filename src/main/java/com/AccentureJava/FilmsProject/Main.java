@@ -201,7 +201,7 @@ public class Main {
     public static void main(String[] args) {
 //       userTest();
 //       filmStorageTest();
-//       searchFilmTest();
+       searchFilmTest();
 //       reviewTest();
 //       filmInfoTest();
     }

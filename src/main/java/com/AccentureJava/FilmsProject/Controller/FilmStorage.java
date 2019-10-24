@@ -2,11 +2,13 @@ package com.AccentureJava.FilmsProject.Controller;
 
 import com.AccentureJava.FilmsProject.Model.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 public class FilmStorage {
 
-    private static TreeSet<Film> listOfFilms = new TreeSet<>(new FilmRatingComparator());
+    private static List<Film> listOfFilms = new ArrayList<>();
 
     private static FilmStorage instance;
 
@@ -36,7 +38,12 @@ public class FilmStorage {
         return false;
     }
 
-    public TreeSet<Film> getFilms() {
+    public List<Film> getSortFilms() {
+        listOfFilms.sort(new FilmRatingComparator());
+        return listOfFilms;
+    }
+
+    public List<Film> getFilms() {
         return listOfFilms;
     }
 
