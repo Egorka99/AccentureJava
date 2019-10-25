@@ -1,5 +1,11 @@
 package com.AccentureJava.FilmsProject.Model;
 
-public enum FilmType {
-    FILM,SERIES,CARTOON
+import java.io.Serializable;
+
+public enum FilmType implements Serializable {
+    FILM,SERIES,CARTOON;
+
+    public String getStatus() {
+        return this.name();
+    }
 }

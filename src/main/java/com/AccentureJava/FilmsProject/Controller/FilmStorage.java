@@ -3,6 +3,7 @@ package com.AccentureJava.FilmsProject.Controller;
 import com.AccentureJava.FilmsProject.Model.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -39,7 +40,7 @@ public class FilmStorage {
     }
 
     public List<Film> getSortFilms() {
-        listOfFilms.sort(new FilmRatingComparator());
+        Collections.sort(listOfFilms,new FilmRatingComparator());
         return listOfFilms;
     }
 
