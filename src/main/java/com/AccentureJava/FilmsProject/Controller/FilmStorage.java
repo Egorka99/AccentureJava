@@ -3,8 +3,15 @@ package com.AccentureJava.FilmsProject.Controller;
 import com.AccentureJava.FilmsProject.Model.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.TreeSet;
+<<<<<<< HEAD
+<<<<<<< HEAD
+import com.fasterxml.jackson.databind.*;
+=======
+>>>>>>> 1c8a8bfe12b3b3df4c8135e06230806f1f064db0
+=======
+>>>>>>> 1c8a8bfe12b3b3df4c8135e06230806f1f064db0
 
 public class FilmStorage {
 
@@ -38,8 +45,11 @@ public class FilmStorage {
         return false;
     }
 
+//    public boolean addFilmsFromJSON(String response) {
+//    }
+
     public List<Film> getSortFilms() {
-        listOfFilms.sort(new FilmRatingComparator());
+        Collections.sort(listOfFilms,new FilmRatingComparator());
         return listOfFilms;
     }
 

@@ -1,0 +1,72 @@
+[{
+  "reviewList":[],
+  "releaseDate":"Mon Nov 03 00:00:00 MSK 3919",
+  "imdbIdentifier":"1048334",
+  "filmType":"FILM",
+  "genre":"Triller",
+  "rating":8.9,
+  "description":"Gotham, early 1980s. Comedian Arthur Fleck lives with a sick mother, who since childhood has taught him to \"walk with a smile.\" Trying to bring good things to the world and give people joy, Arthur is faced with human cruelty and gradually comes to the conclusion that this world will receive from him not a good smile, but the grin of the villain Joker.",
+  "title":"Joker"
+},
+{
+  "reviewList":[],
+  "releaseDate":"Wed Oct 10 00:00:00 MSK 3894",
+  "imdbIdentifier":"326",
+  "filmType":"FILM",
+  "genre":"Drama",
+  "rating":9.3,
+  "description":"Accountant Andy Dufrain is accused of killing his own wife and her lover. It appears in a prison called Shawshank, he is faced with cruelty and lawlessness reigning on both sides of the bars. They become their slave for the rest of their lives. Andy, who has a lively mind and a good soul, finds approaches both to prisoners and to guards, seeking their special attitude to himself.",
+  "title":"The Shawshank Redemption"
+},
+{
+  "reviewList":[],
+  "releaseDate":"Fri Apr 09 00:00:00 MSK 3915",
+  "imdbIdentifier":"258687",
+  "filmType":"FILM",
+  "genre":"Fantastic",
+  "rating":8.6,
+  "description":"When drought, dust storms, and the extinction of plants lead humanity to a food crisis, a team of researchers and scientists travel through a wormhole (which supposedly connects space-time regions over a long distance) on a journey to transcend the former restrictions on human space travel and find a planet suitable for humanity conditions.",
+  "title":"Interstellar"
+},
+{
+  "reviewList":[],
+  "releaseDate":"Mon Apr 17 00:00:00 MSK 3911",
+  "imdbIdentifier":"464963",
+  "filmType":"SERIES",
+  "genre":"Fantasy",
+  "rating":9.4,
+  "description":"The time of prosperity is drawing to a close, and summer, which lasted almost a decade, is dying out. Around the center of power of the Seven Kingdoms, the Iron Throne, a conspiracy is brewing, and during this difficult time, the king decides to seek support from his youth friend Eddard Stark. In a world where everyone - from the king to the mercenary - is eager for power, intrigues and is ready to stick a knife in the back, there is a place for nobility, compassion and love. Meanwhile, no one notices the awakening of darkness from legends far in the North - and only the Wall protects the living south of it.",
+  "title":"Game of Thrones"
+},
+{
+  "reviewList":[],
+  "releaseDate":"Fri Jul 22 00:00:00 MSK 3910",
+  "imdbIdentifier":"502838",
+  "filmType":"SERIES",
+  "genre":"Detective",
+  "rating":9.1,
+  "description":"\nEvents unfold today. He passed Afghanistan, remained disabled. Upon returning to his native land, he meets a mysterious, but peculiar, ingenious man. The one in search of a roommate. London 2010 Inexplicable killings occur. Scotland Yard has no idea what to grab. There is only one person who can solve problems and find answers to difficult questions.",
+  "title":"Sherlock"
+},
+  {
+    "reviewList":[],
+    "releaseDate":"Tue Dec 17 00:00:00 MSK 3889",
+    "imdbIdentifier":"77164",
+    "filmType":"CARTOON",
+    "genre":"Comedy",
+    "rating":8.7,
+    "description":"Events unfold today. He passed Afghanistan, remained disabled. Upon returning to his native land, he meets a mysterious, but peculiar, ingenious man. The one in search of a roommate. London 2010 Inexplicable killings occur. Scotland Yard has no idea what to grab. There is only one person who can solve problems and find answers to difficult questions.",
+    "title":"The Simpsons"
+  },
+  { 
+    "reviewList":[],
+    "releaseDate":"Fri Jul 22 00:00:00 MSK 3910",
+    "imdbIdentifier":"46483",
+    "filmType":"CARTOON",
+    "genre":"Comedy",
+    "rating":8.6,
+    "description":"Fun adventures of an inseparable couple - the bully of the Wolf and the smart Hare. Favorite childhood scenes of chases, quarrels and reconciliations, jokes and melodies.",
+    "title":"Nu, pogodi!"
+  }
+]
+
