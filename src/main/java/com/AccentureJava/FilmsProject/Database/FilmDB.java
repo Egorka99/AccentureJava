@@ -6,13 +6,16 @@ import java.sql.SQLException;
 
 public class FilmDB {
     // Блок объявления констант
-    public static final String DB_URL = "jdbc:h2:/home/egor/Документы/GitHub/AccentureJava/db/filmDB";
+    //Notebook path
+    //public static final String DB_URL = "jdbc:h2:/home/egor/Документы/GitHub/AccentureJava/db/filmDB";
+    //PC path
+    public static final String DB_URL = "jdbc:h2:/D:/java/AccentureJava/db/filmDB";
     public static final String DB_Driver = "org.h2.Driver";
 
     public static void main(String[] args) {
         try {
             Class.forName(DB_Driver); //Проверяем наличие JDBC драйвера для работы с БД
-            Connection connection = DriverManager.getConnection(DB_URL);//соединениесБД
+            Connection connection = DriverManager.getConnection(DB_URL);//соединение с БД
             System.out.println("Соединение с СУБД выполнено.");
             connection.close();       // отключение от БД
             System.out.println("Отключение от СУБД выполнено.");

@@ -93,26 +93,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MultiThreadSearch">
-    <configuration name="Draft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Draft" />
-      <module name="AccentureJava" />
+  <component name="RunManager" selected="Application.FilmDB">
+    <configuration name="FilmDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Database.FilmDB" />
+      <module name="movies" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AccentureJava.FilmsProject.Database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.HelloWorld" />
-      <module name="AccentureJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AccentureJava.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,6 +162,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FilmDB" />
         <item itemvalue="Application.MultiThreadSearch" />
       </list>
     </recent_temporary>
