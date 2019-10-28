@@ -9,11 +9,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-public class MultiThreadSearch  {
+public class SearchApplication {
 
     private static FilmStorage filmStorage = FilmStorage.getInstance();
 
-    MultiThreadSearch(){}
+    SearchApplication(){}
 
     private static void addFilms(){
         Date date1 = new Date(2019, Calendar.AUGUST,13);

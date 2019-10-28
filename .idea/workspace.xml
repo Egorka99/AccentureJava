@@ -59,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -93,9 +94,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FilmDB">
-    <configuration name="FilmDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Database.FilmDB" />
+  <component name="RunManager" selected="JUnit.com.AccentureJava.FilmsProject.Database in movies">
+    <configuration name="MoviesDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Database.MoviesDB" />
       <module name="movies" />
       <extension name="coverage">
         <pattern>
@@ -107,22 +108,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.Main" />
-      <module name="movies" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AccentureJava.FilmsProject.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiThreadSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.MultiThreadSearch" />
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.SearchApplication" />
       <module name="movies" />
       <extension name="coverage">
         <pattern>
@@ -160,10 +148,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.AccentureJava.FilmsProject.Database in movies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.AccentureJava.FilmsProject.Database" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FilmDB" />
-        <item itemvalue="Application.MultiThreadSearch" />
+        <item itemvalue="JUnit.com.AccentureJava.FilmsProject.Database in movies" />
+        <item itemvalue="Application.MoviesDB" />
+        <item itemvalue="Application.SearchApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -192,5 +195,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/movies$com_AccentureJava_FilmsProject_Database_in_movies.ic" NAME="com.AccentureJava.FilmsProject.Database in movies Coverage Results" MODIFIED="1572287933313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.AccentureJava.FilmsProject.Database.*</FILTER>
+    </SUITE>
   </component>
 </project>
