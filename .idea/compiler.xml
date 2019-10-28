@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Tasks" />
-        <module name="AccentureJava" />
+        <module name="movies" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="movies" target="1.11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

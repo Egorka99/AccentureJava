@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33013283-fea2-4e7e-b0cb-5f0a17e34609" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/BullsAndCows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/BullsAndCows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/BullsAndCowsGame/Main.java" afterDir="false" />
+    <list default="true" id="3123ba95-d6ed-45cb-8edc-4809a52699bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/AccentureJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml~Stashed changes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml~Updated upstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_20180813.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_201808131.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/films.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/ConsoleInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/JSONParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/UserOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/UserOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/View/MultiThreadSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/View/MultiThreadSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/HelloWorld.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AccentureJava.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/BullsAndCows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/BullsAndCows.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/ConsoleInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmRatingComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmRatingComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/JSONParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/JSONParser.class~HEAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/FilmType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/FilmType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/ConsoleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/ConsoleInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/MultiThreadSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/MultiThreadSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/SearchWait.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/SearchWait.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/TestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/AccentureJava/HelloWorldTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AccentureJava/HelloWorldTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +58,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,21 +65,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
-  <component name="ProjectId" id="1SGnkQwB8MKBF6C66mZFARjV7W1" />
+  <component name="ProjectId" id="1Sp7bZhhcDHO8rHpALdWcJAfmZy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/json-20180813.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/jackson-core-2.9.8.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,7 +93,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloWorld">
+  <component name="RunManager" selected="Application.MultiThreadSearch">
+    <configuration name="Draft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Draft" />
+      <module name="AccentureJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AccentureJava.HelloWorld" />
       <module name="AccentureJava" />
@@ -73,35 +120,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Main" />
-      <module name="AccentureJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AccentureJava.FilmsProject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.BullsAndCowsGame.Main" />
-      <module name="Tasks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AccentureJava.BullsAndCowsGame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Main" />
-      <module name="AccentureJava" />
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.Main" />
+      <module name="movies" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AccentureJava.FilmsProject.Model.*" />
@@ -112,11 +133,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MultiThreadSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.MultiThreadSearch" />
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.SearchMain" />
+      <module name="AccentureJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.Test" />
+      <module name="AccentureJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloWorld" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MultiThreadSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -125,11 +184,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="33013283-fea2-4e7e-b0cb-5f0a17e34609" name="Default Changelist" comment="" />
-      <created>1571328750477</created>
+      <changelist id="3123ba95-d6ed-45cb-8edc-4809a52699bb" name="Default Changelist" comment="" />
+      <created>1572248765319</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571328750477</updated>
+      <updated>1572248765319</updated>
     </task>
     <servers />
   </component>
@@ -145,10 +204,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AccentureJava$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1571563274831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.AccentureJava.FilmsProject.*</FILTER>
-    </SUITE>
   </component>
 </project>
