@@ -4,8 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.AccentureJava</groupId>
-  <artifactId>Tasks</artifactId>
+  <groupId>com.accenture.itfactory</groupId>
+  <artifactId>movies</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>Tasks</name>
@@ -24,6 +24,25 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.197</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.3</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.6.0</version>
     </dependency>
   </dependencies>
 
