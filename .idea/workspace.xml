@@ -94,7 +94,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.AccentureJava.FilmsProject.Database in movies">
+  <component name="RunManager" selected="Application.DatabaseApplication">
+    <configuration name="DatabaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.DatabaseApplication" />
+      <module name="movies" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MoviesDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.Database.MoviesDB" />
       <module name="movies" />
@@ -112,19 +125,6 @@
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.SearchApplication" />
       <module name="movies" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.SearchMain" />
-      <module name="AccentureJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AccentureJava.FilmsProject.View.*" />
@@ -164,6 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseApplication" />
         <item itemvalue="JUnit.com.AccentureJava.FilmsProject.Database in movies" />
         <item itemvalue="Application.MoviesDB" />
         <item itemvalue="Application.SearchApplication" />
