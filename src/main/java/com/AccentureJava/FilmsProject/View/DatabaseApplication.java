@@ -22,15 +22,15 @@ public class DatabaseApplication {
             System.err.println("Не удалось создать таблицу. Не найден драйвер для подключения к БД");
             ex.printStackTrace();
         }
- 
+
         try {
             filmTable.addTestData();
             System.out.println("Фильмы успешно добавлены!");
         }
         catch (SQLException ex) {
-            System.err.println("Не удалось добавить фильмы. Возможно,неправильно сформирован SQL запрос");
+            System.err.println("Не удалось добавить фильмы. Данные фильмы возможно уже добавлены");
             ex.printStackTrace();
-        }
+        } 
         catch (ClassNotFoundException ex) {
             System.err.println("Не удалось добавить фильмы. Не найден драйвер для подключения к БД");
             ex.printStackTrace();
