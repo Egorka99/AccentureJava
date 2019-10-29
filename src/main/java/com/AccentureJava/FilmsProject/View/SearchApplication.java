@@ -36,10 +36,10 @@ public class SearchApplication {
         filmStorage.addNewFilm(newFilm3);
     }
 
-    private static  void searchFilm() throws InterruptedException {
+    private static void searchFilm(){
 
         Scanner scanner = new Scanner(System.in);
-        addFilms();
+        addFilms(); 
         System.out.println("Найти фильм: ");
         System.out.println("1.По идентификатору");
         System.out.println("2.По названию");

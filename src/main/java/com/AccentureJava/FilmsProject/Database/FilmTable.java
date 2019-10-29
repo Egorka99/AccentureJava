@@ -4,9 +4,12 @@ import com.AccentureJava.FilmsProject.Interfaces.FilmOperation;
 import com.AccentureJava.FilmsProject.Interfaces.TableOperation;
 import com.AccentureJava.FilmsProject.Model.Admin;
 import com.AccentureJava.FilmsProject.Model.Film;
+import com.AccentureJava.FilmsProject.Model.FilmType;
 import com.AccentureJava.FilmsProject.Model.User;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -52,17 +55,78 @@ public class FilmTable extends BaseTable implements TableOperation, FilmOperatio
     }
 
     @Override
-    public List<Film> searchFilmByIdentifier(String imdbIdentifier) {
-        return null;
+    public List<Film> searchFilmByIdentifier(String searchIdentifier) throws SQLException, ClassNotFoundException {
+        List<Film> foundFilms = new ArrayList<>();
+        ResultSet queryResult = executeQuery("SELECT * FROM FILM WHERE IMDBIDENTIFIER = '"+searchIdentifier+"';");
+        String imdbIdentifier = queryResult.getString(0);
+        String title = queryResult.getString(1);
+        FilmType filmType = FilmType.FILM;
+        switch (queryResult.getInt(2)) {
+            case 0:
+                filmType = FilmType.FILM;
+            case 1:
+                filmType = FilmType.SERIES;
+            case 2:
+                filmType = FilmType.CARTOON;
+        }
+        String genre = queryResult.getString(3);
+        Date releaseDate = queryResult.getDate(4);
+        double rating = queryResult.getDouble(5);;
+        String description = queryResult.getString(6);;
+        Film film = new Film(title,imdbIdentifier,filmType,genre,releaseDate,rating,description);
+        foundFilms.add(film);
+        return foundFilms;
     }
 
     @Override
-    public List<Film> searchFilmByTitle(String title) {
-        return null;
+    public List<Film> searchFilmByTitle(String searchTitle) throws SQLException, ClassNotFoundException {
+        List<Film> foundFilms = new ArrayList<>();
+        ResultSet queryResult = executeQuery("SELECT * FROM FILM WHERE TITLE = '"+searchTitle+"';");
+        while (queryResult.next()) {
+            String imdbIdentifier = queryResult.getString(0);
+            String title = queryResult.getString(1);
+            FilmType filmType = FilmType.FILM;
+            switch (queryResult.getInt(2)) {
+                case 0:
+                    filmType = FilmType.FILM;
+                case 1:
+                    filmType = FilmType.SERIES;
+                case 2:
+                    filmType = FilmType.CARTOON;
+            }
+            String genre = queryResult.getString(3);
+            Date releaseDate = queryResult.getDate(4);
+            double rating = queryResult.getDouble(5);;
+            String description = queryResult.getString(6);
+            Film film = new Film(title,imdbIdentifier,filmType,genre,releaseDate,rating,description);
+            foundFilms.add(film);
+        }
+        return foundFilms;
     }
 
     @Override
-    public List<Film> searchFilmByReleaseDate(Date releaseDate) {
-        return null;
+    public List<Film> searchFilmByReleaseDate(Date searchReleaseDate) throws SQLException, ClassNotFoundException {
+        List<Film> foundFilms = new ArrayList<>();
+        ResultSet queryResult = executeQuery("SELECT * FROM FILM WHERE DATE = '"+ searchReleaseDate +"';");
+        while (queryResult.next()) {
+            String imdbIdentifier = queryResult.getString(0);
+            String title = queryResult.getString(1);
+            FilmType filmType = FilmType.FILM;
+            switch (queryResult.getInt(2)) {
+                case 0:
+                    filmType = FilmType.FILM;
+                case 1:
+                    filmType = FilmType.SERIES;
+                case 2:
+                    filmType = FilmType.CARTOON;
+            }
+            String genre = queryResult.getString(3);
+            Date releaseDate = queryResult.getDate(4);
+            double rating = queryResult.getDouble(5);;
+            String description = queryResult.getString(6);
+            Film film = new Film(title,imdbIdentifier,filmType,genre,releaseDate,rating,description);
+            foundFilms.add(film);
+        }
+        return foundFilms;
     }
 }
