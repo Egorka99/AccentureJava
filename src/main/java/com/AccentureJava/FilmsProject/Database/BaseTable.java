@@ -13,12 +13,13 @@ public class BaseTable {
         this.tableName = tableName;
     }
 
-    protected void execute(String sql) throws SQLException, ClassNotFoundException {
+    protected boolean execute(String sql) throws SQLException, ClassNotFoundException {
         database.openConnection();
         Statement statement = database.getStatement();
-        statement.execute(sql);
+        boolean isExecute = statement.execute(sql);
         statement.close();
         database.closeConnection();
+        return isExecute;
     };
     protected ResultSet executeQuery(String sql) throws SQLException, ClassNotFoundException {
         database.openConnection();
@@ -26,6 +27,6 @@ public class BaseTable {
         ResultSet rs = statement.executeQuery(sql);
         statement.close();
         database.closeConnection();
-        return rs; 
+        return rs;
     };
 }
