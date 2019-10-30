@@ -5,6 +5,7 @@ import com.AccentureJava.FilmsProject.Controller.FilmStorage;
 import com.AccentureJava.FilmsProject.Model.Film;
 import com.AccentureJava.FilmsProject.Model.FilmType;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -16,8 +17,8 @@ public class SearchApplication {
     SearchApplication(){}
 
     private static void addFilms(){
-        Date date1 = new Date(2019, Calendar.AUGUST,13);
-        Date date2 = new Date(2019, Calendar.OCTOBER,22);
+        LocalDate date1 = LocalDate.of(2019,8,13);
+        LocalDate date2 = LocalDate.of(2019,10,22);
 
         Film newFilm = new Film("Marvel Avengers","wadq213213", FilmType.FILM,"Action",
                 date1, 8.1,"Marvel Film");
@@ -82,9 +83,9 @@ public class SearchApplication {
                     searchWait.start();
                     String[] dateArray = input.split("\\.");
                     int year = Integer.parseInt(dateArray[0]);
-                    int month = Integer.parseInt(dateArray[1]) - 1;
+                    int month = Integer.parseInt(dateArray[1]);
                     int day = Integer.parseInt(dateArray[2]);
-                    Date date = new Date(year,month,day);
+                    LocalDate date = LocalDate.of(year,month,day);
                     ConsoleInfo.getSearchResult(filmOperationImpl.searchFilmByReleaseDate(date));
                     searchWait.interrupt();
                     break;

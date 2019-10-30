@@ -2,18 +2,19 @@ package com.AccentureJava.FilmsProject.Model;
 
 import com.AccentureJava.FilmsProject.Model.Person;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Review {
     private static int maxId;
 
     private int ReviewId;
-    private Date createDate;
+    private LocalDate createDate;
     private Person author;
     private String reviewText;
     private double Rating;
 
-    public Review( Date createDate, Person author, String reviewText, double rating) {
+    public Review(LocalDate createDate, Person author, String reviewText, double rating) {
         this.createDate = createDate;
         this.author = author;
         this.reviewText = reviewText;
@@ -22,7 +23,7 @@ public class Review {
         maxId++;
     }
 
-    public Date getCreateDate() {
+    public LocalDate getCreateDate() {
         return createDate;
     }
 
