@@ -54,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SearchApplication">
+  <component name="RunManager" selected="Application.DatabaseApplication">
     <configuration name="DatabaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AccentureJava.FilmsProject.View.DatabaseApplication" />
       <module name="movies" />
@@ -159,8 +159,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SearchApplication" />
         <item itemvalue="Application.DatabaseApplication" />
+        <item itemvalue="Application.SearchApplication" />
         <item itemvalue="JUnit.com.AccentureJava.FilmsProject.Database in movies" />
         <item itemvalue="Application.MoviesDB" />
       </list>
@@ -191,6 +191,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Database/FilmTable.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/movies$com_AccentureJava_FilmsProject_Database_in_movies.ic" NAME="com.AccentureJava.FilmsProject.Database in movies Coverage Results" MODIFIED="1572287933313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -58,19 +58,21 @@ public class FilmTable extends BaseTable implements TableOperation, FilmOperatio
         return false;
     }
 
-    @Override
     public List<Film> searchFilmByField(String field,String value) throws SQLException {
         List<Film> foundFilms = new ArrayList<>();
-        PreparedStatement preparedStatement = DBconnection.getPreparedStatement("SELECT * FROM FILM WHERE ? = '?';");
-        preparedStatement.setString(1,field);
-        preparedStatement.setString(2,value);
+        PreparedStatement preparedStatement = DBconnection.getPreparedStatement("SELECT * FROM FILM WHERE "+field+" = ?");
+        preparedStatement.setString(1,value);
         ResultSet queryResult = preparedStatement.executeQuery();
+        queryResult.first();
+        Film film = new Film(
+                queryResult.getString("title"),
+                queryResult.getString("IMDBidentifier"),
+                FilmType.values()[queryResult.getInt("filmtype")],
+                queryResult.getString("genre"),
+                queryResult.getDate("releasedate").toLocalDate(),
+                queryResult.getDouble("rating"),
+                queryResult.getString("description"));
 
-        String genre = queryResult.getString("genre");
-        LocalDate releaseDate = queryResult.getDate("releasedate").toLocalDate();
-        double rating = queryResult.getDouble("rating");
-        String description = queryResult.getString("description");
-        Film film = new Film(queryResult.getString("title"),queryResult.getString("IMDBidentifier"),filmType,genre,releaseDate,rating,description);
         foundFilms.add(film);
         return foundFilms;
     }
