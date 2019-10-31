@@ -1,13 +1,12 @@
 package com.AccentureJava.FilmsProject.Controller;
 
-import com.AccentureJava.FilmsProject.Interfaces.FilmOperation;
 import com.AccentureJava.FilmsProject.Model.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class FilmOperationImpl implements FilmOperation {
+public class FilmOperationImpl {
 
     private static FilmOperationImpl instance = null;
 
@@ -23,7 +22,7 @@ public class FilmOperationImpl implements FilmOperation {
     private FilmStorage filmStorage = FilmStorage.getInstance();
 
     public boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) {
-        Date currentDate = new Date();
+        LocalDate currentDate = LocalDate.now();
         Review review = new Review(currentDate,user,reviewText,rating);
 
         for (Film currentFilm: filmStorage.getFilms()) {
@@ -36,7 +35,7 @@ public class FilmOperationImpl implements FilmOperation {
     }
 
     public boolean updateReview(String imdbIdentifier, Admin author, int oldReviewId, String reviewText, double rating) {
-        Date currentDate = new Date();
+        LocalDate currentDate = LocalDate.now();
         Review review = new Review(currentDate,author,reviewText,rating);
 
         for (Film currentFilm: filmStorage.getFilms()) {
@@ -90,7 +89,7 @@ public class FilmOperationImpl implements FilmOperation {
         return foundFilmsList;
     }
 
-    public List<Film> searchFilmByReleaseDate(Date releaseDate) {
+    public List<Film> searchFilmByReleaseDate(LocalDate releaseDate) {
         List<Film> foundFilmsList = new ArrayList<>();
         for (Film currentFilm : filmStorage.getSortFilms()) {
             if (currentFilm.getReleaseDate().equals(releaseDate)) {

@@ -5,6 +5,7 @@ import com.AccentureJava.FilmsProject.Controller.FilmStorage;
 import com.AccentureJava.FilmsProject.Controller.UserOperationImpl;
 import com.AccentureJava.FilmsProject.Model.*;
 
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -45,7 +46,7 @@ public class Test {
 
     }
     public static void filmStorageTest() {
-        Date date = new Date(2019, Calendar.AUGUST,13);
+        LocalDate date = LocalDate.of(2019,8,13);
 
         Film newFilm = new Film("Marvel Avengers","wadq213213", FilmType.FILM,"Action",
                 date, 8.1,"Marvel Film");
@@ -76,8 +77,9 @@ public class Test {
             System.out.println("Ошибка при авторизации");
         }
 
-        Date date1 = new Date(2019, Calendar.AUGUST,13);
-        Date date2 = new Date(2019, Calendar.OCTOBER,22);
+        LocalDate date1 = LocalDate.of(2019,8,13);
+        LocalDate date2 = LocalDate.of(2019,10,22);
+
 
         Film newFilm = new Film("Marvel Avengers","wadq213213",FilmType.FILM,"Action",
                 date1, 8.1,"Marvel Film");
@@ -125,7 +127,7 @@ public class Test {
             System.out.println("Ошибка при авторизации");
         }
 
-        Date date1 = new Date(2019, Calendar.AUGUST, 13);
+        LocalDate date1 = LocalDate.of(2019,8,13);
 
         Film newFilm = new Film("Marvel Avengers", "213213", FilmType.FILM, "Action",
                 date1, 8.1, "Marvel Film");
@@ -184,7 +186,7 @@ public class Test {
             System.out.println("Ошибка при авторизации");
         }
 
-        Date date1 = new Date(2019, Calendar.AUGUST, 13);
+        LocalDate date1 = LocalDate.of(2019,8,13);
         Film newFilm = new Film("Marvel Avengers", "213213", FilmType.FILM, "Action",
                 date1, 8.1, "Marvel Film");
 

@@ -1,8 +1,10 @@
 package com.AccentureJava.FilmsProject.View;
 
+import com.AccentureJava.FilmsProject.Database.FilmTable;
 import com.AccentureJava.FilmsProject.Model.Film;
 import com.AccentureJava.FilmsProject.Model.Review;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class ConsoleInfo {
@@ -19,6 +21,7 @@ public class ConsoleInfo {
                 ,film.getImdbIdentifier(),film.getTitle(),film.getFilmType(),film.getGenre(),film.getReleaseDate(),
                 film.getRating(),film.getDescription());
         getReviewsInfo(film);
+        getReviewsFromDBInfo(film);
     }
 
     public static void getReviewsInfo(Film film) {
@@ -27,6 +30,20 @@ public class ConsoleInfo {
                     currentReview.getAuthor().getName(),currentReview.getCreateDate(),currentReview.getRating());
             System.out.println(currentReview.getReviewText());
         }
+    }
+
+    public static void getReviewsFromDBInfo(Film film){
+        try {
+            for (Review currentReview : new FilmTable().getReviews(film.getImdbIdentifier())) {
+                System.out.printf("Отзыв № %s. Автор: %s. Дата создания: %s. Оценка: %s \n",currentReview.getReviewId(),
+                        currentReview.getAuthor().getName(),currentReview.getCreateDate(),currentReview.getRating());
+                System.out.println(currentReview.getReviewText());
+            }
+        }
+        catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+
     }
 
     public static void getInfoln(Film film){

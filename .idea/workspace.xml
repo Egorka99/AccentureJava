@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3123ba95-d6ed-45cb-8edc-4809a52699bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AccentureJava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml~Stashed changes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml~Updated upstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_20180813.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_201808131.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/films.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/ConsoleInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/FilmStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/JSONParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/UserOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Controller/UserOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/View/MultiThreadSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/AccentureJava/FilmsProject/View/MultiThreadSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/AccentureJava/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AccentureJava.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/BullsAndCows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/BullsAndCows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/BullsAndCowsGame/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/ConsoleInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmRatingComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmRatingComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/FilmStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/JSONParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/JSONParser.class~HEAD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Controller/UserStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/FilmType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/FilmType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/Review.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/ConsoleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/ConsoleInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/MultiThreadSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/MultiThreadSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/SearchWait.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/SearchWait.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/FilmsProject/View/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/AccentureJava/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/AccentureJava/TestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/AccentureJava/HelloWorldTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/AccentureJava/HelloWorldTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="3123ba95-d6ed-45cb-8edc-4809a52699bb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +26,22 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Sp7bZhhcDHO8rHpALdWcJAfmZy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/jackson-core-2.9.8.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -162,12 +123,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="movies [clean,install,exec:java]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="exec:java" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.DatabaseApplication" />
+      <item itemvalue="Application.MoviesDB" />
+      <item itemvalue="Application.SearchApplication" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="JUnit.com.AccentureJava.FilmsProject.Database in movies" />
+      <item itemvalue="Maven.movies [clean,install,exec:java]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DatabaseApplication" />
+        <item itemvalue="Application.SearchApplication" />
         <item itemvalue="JUnit.com.AccentureJava.FilmsProject.Database in movies" />
         <item itemvalue="Application.MoviesDB" />
-        <item itemvalue="Application.SearchApplication" />
       </list>
     </recent_temporary>
   </component>

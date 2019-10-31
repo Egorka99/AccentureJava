@@ -1,5 +1,6 @@
 package com.AccentureJava.FilmsProject.Model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,12 +11,12 @@ public class Film {
     private String imdbIdentifier;
     private FilmType filmType;
     private String genre;
-    private Date releaseDate;
+    private LocalDate releaseDate;
     private double rating;
     private String description;
     private List<Review> reviewList;
 
-    public Film(String title, String imdbIdentifier, FilmType filmType, String genre, Date releaseDate, double rating,
+    public Film(String title, String imdbIdentifier, FilmType filmType, String genre, LocalDate releaseDate, double rating,
                 String description) {
         this.title = title;
         this.imdbIdentifier = imdbIdentifier;
@@ -44,7 +45,7 @@ public class Film {
         return genre;
     }
 
-    public Date getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
     }
 

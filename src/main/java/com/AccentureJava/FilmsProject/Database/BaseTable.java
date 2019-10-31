@@ -13,20 +13,9 @@ public class BaseTable {
         this.tableName = tableName;
     }
 
-    protected boolean execute(String sql) throws SQLException, ClassNotFoundException {
-        database.openConnection();
+    protected boolean execute(String sql) throws SQLException {
         Statement statement = database.getStatement();
         boolean isExecute = statement.execute(sql);
-        statement.close();
-        database.closeConnection();
         return isExecute;
-    };
-    protected ResultSet executeQuery(String sql) throws SQLException, ClassNotFoundException {
-        database.openConnection();
-        Statement statement = database.getStatement();
-        ResultSet rs = statement.executeQuery(sql);
-        statement.close();
-        database.closeConnection();
-        return rs;
     };
 }
