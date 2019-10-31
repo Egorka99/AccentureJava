@@ -4,6 +4,7 @@ package com.AccentureJava.FilmsProject.View;
 import com.AccentureJava.FilmsProject.Database.FilmTable;
 import com.AccentureJava.FilmsProject.Database.UserTable;
 import com.AccentureJava.FilmsProject.Model.Film;
+import com.AccentureJava.FilmsProject.Model.User;
 import org.w3c.dom.ls.LSOutput;
 
 import java.sql.SQLException;
@@ -89,13 +90,21 @@ public class DatabaseApplication {
             ex.printStackTrace();
         }
 
-
         try {
             filmTable.addReviewTestData();
             System.out.println("Отзывы успешно добавлены");
         }
         catch (SQLException ex) {
-            System.err.println("Не удалось добавить отзыв. Данные фильмы возможно уже добавлены");
+            System.err.println("Не удалось добавить отзывы.");
+            ex.printStackTrace();
+        }
+        User user = new User();
+        try {
+            filmTable.addReview("77164",user,"bla bla ",8.9);
+            System.out.println("Отзыв успешно добавлены");
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось добавить отзыв.");
             ex.printStackTrace();
         }
 

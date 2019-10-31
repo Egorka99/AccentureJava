@@ -34,7 +34,7 @@ public class FilmTable extends BaseTable {
                 "                reviewId INTEGER AUTO_INCREMENT PRIMARY KEY, \n" +
                 "                filmIdentifier VARCHAR(50) NOT NULL, \n" +
                 "                createDate DATE NOT NULL, \n" +
-                "                authorLogin VARCHAR(50) NOT NULL,\n" +
+                "                authorLogin VARCHAR(50),\n" +
                 "                rating DOUBLE NOT NULL,\n" +
                 "                reviewText VARCHAR(500) NOT NULL)");
     }
