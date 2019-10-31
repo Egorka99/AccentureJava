@@ -1,14 +1,12 @@
 package com.AccentureJava.FilmsProject.Controller;
 
-import com.AccentureJava.FilmsProject.Interfaces.FilmOperation;
 import com.AccentureJava.FilmsProject.Model.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class FilmOperationImpl implements FilmOperation {
+public class FilmOperationImpl {
 
     private static FilmOperationImpl instance = null;
 

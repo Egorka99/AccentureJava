@@ -15,49 +15,49 @@ import java.util.function.DoubleToIntFunction;
 public class DatabaseApplication {
     public static void main(String[] args) {
 
-//        UserTable userTable = new UserTable();
-//
-//        try {
-//            userTable.createTable();
-//            System.out.println("Таблица пользователь успешно создана!");
-//        }
-//        catch (SQLException ex) {
-//            System.err.println("Не удалось создать таблицу. Возможно,неправильно сформирован SQL запрос");
-//            ex.printStackTrace();
-//        }
-//
-//        try {
-//            if (userTable.signUp("Egor","egorka99","qwerty123")) {
-//                System.out.println("Пользователь успешно зарегистрирован!");
-//            }
-//            else {
-//                System.out.println("Пользователь с таким логином уже существует");
-//            }
-//        }
-//        catch (SQLException ex) {
-//            System.err.println("Не удалось создать пользователя");
-//            ex.printStackTrace();
-//        }
-//        catch (ClassNotFoundException ex) {
-//            System.err.println("Не удалось создать пользователя. Не найден драйвер для подключения к БД");
-//            ex.printStackTrace();
-//        }
-//
-//        try {
-//            userTable.signIn("egorka99","qwerty123");
-//            System.out.println("Пользователь успешно авторизировался!");
-//        }
-//        catch (SQLException ex) {
-//            System.err.println("Не удалось создать пользователя");
-//            ex.printStackTrace();
-//        }
-//        catch (ClassNotFoundException ex) {
-//            System.err.println("Не удалось создать пользователя. Не найден драйвер для подключения к БД");
-//            ex.printStackTrace();
-//        }
-//        catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
+        UserTable userTable = new UserTable();
+
+        try {
+            userTable.createTable();
+            System.out.println("Таблица пользователь успешно создана!");
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось создать таблицу. Возможно,неправильно сформирован SQL запрос");
+            ex.printStackTrace();
+        }
+
+        try {
+            if (userTable.signUp("Egor","egorka99","qwerty123")) {
+                System.out.println("Пользователь успешно зарегистрирован!");
+            }
+            else {
+                System.out.println("Пользователь с таким логином уже существует");
+            }
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось создать пользователя");
+            ex.printStackTrace();
+        }
+        catch (ClassNotFoundException ex) {
+            System.err.println("Не удалось создать пользователя. Не найден драйвер для подключения к БД");
+            ex.printStackTrace();
+        }
+
+        try {
+            userTable.signIn("egorka99","qwerty123");
+            System.out.println("Пользователь успешно авторизировался!");
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось создать пользователя");
+            ex.printStackTrace();
+        }
+        catch (ClassNotFoundException ex) {
+            System.err.println("Не удалось создать пользователя. Не найден драйвер для подключения к БД");
+            ex.printStackTrace();
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
 
 
         FilmTable filmTable = new FilmTable();
@@ -77,6 +77,25 @@ public class DatabaseApplication {
         }
         catch (SQLException ex) {
             System.err.println("Не удалось добавить фильмы. Данные фильмы возможно уже добавлены");
+            ex.printStackTrace();
+        }
+
+        try {
+            filmTable.createReviewTable();
+            System.out.println("Таблица отзывов успешно создана!");
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось создать таблицу. Возможно,неправильно сформирован SQL запрос");
+            ex.printStackTrace();
+        }
+
+
+        try {
+            filmTable.addReviewTestData();
+            System.out.println("Отзывы успешно добавлены");
+        }
+        catch (SQLException ex) {
+            System.err.println("Не удалось добавить отзыв. Данные фильмы возможно уже добавлены");
             ex.printStackTrace();
         }
 

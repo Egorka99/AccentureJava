@@ -1,11 +1,6 @@
 package com.AccentureJava.FilmsProject.Database;
 
-import com.AccentureJava.FilmsProject.Interfaces.FilmOperation;
-import com.AccentureJava.FilmsProject.Interfaces.TableOperation;
-import com.AccentureJava.FilmsProject.Model.Admin;
-import com.AccentureJava.FilmsProject.Model.Film;
-import com.AccentureJava.FilmsProject.Model.FilmType;
-import com.AccentureJava.FilmsProject.Model.User;
+import com.AccentureJava.FilmsProject.Model.*;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class FilmTable extends BaseTable implements TableOperation, FilmOperation {
+public class FilmTable extends BaseTable {
 
     MoviesDB DBconnection = MoviesDB.getInstance();
 
@@ -34,6 +29,16 @@ public class FilmTable extends BaseTable implements TableOperation, FilmOperatio
                 "                description VARCHAR(1000) NOT NULL)");
     }
 
+    public boolean createReviewTable() throws SQLException {
+        return execute("CREATE TABLE IF NOT EXISTS Review(\n" +
+                "                reviewId INTEGER AUTO_INCREMENT PRIMARY KEY, \n" +
+                "                filmIdentifier VARCHAR(50) NOT NULL, \n" +
+                "                createDate DATE NOT NULL, \n" +
+                "                authorLogin VARCHAR(50) NOT NULL,\n" +
+                "                rating DOUBLE NOT NULL,\n" +
+                "                reviewText VARCHAR(500) NOT NULL)");
+    }
+
     public void addTestData() throws SQLException {
         execute("INSERT INTO Film VALUES ('326', 'The Shawshank Redemption', 0, 'Drama', '1994-10-03', 8.9, 'description');");
         execute("INSERT INTO Film VALUES ('258687', 'Interstellar', 0,'Fantastic', '2014-10-03', 8.6, 'description');");
@@ -43,19 +48,40 @@ public class FilmTable extends BaseTable implements TableOperation, FilmOperatio
         execute("INSERT INTO Film VALUES ('46483', 'Nu, pogodi!', 2,'Comedy', '1965-10-03', 8.6, 'description');");
     }
 
-    @Override
-    public boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) {
-        return false;
+    public void addReviewTestData() throws SQLException {
+        execute("INSERT INTO Review VALUES (NULL, '326', '2014-10-03', 'user123', 8.9, 'description');");
+        execute("INSERT INTO Review VALUES (NULL, '258687', '2011-10-03', 'user133', 7.4, 'description');");
+        execute("INSERT INTO Review VALUES (NULL, '464963', '2013-10-03', 'user223', 5.9, 'description');");
+        execute("INSERT INTO Review VALUES (NULL, '502838', '2015-10-03', 'user1023', 9.1, 'description');");
+        execute("INSERT INTO Review VALUES (NULL, '77164', '2017-10-03', 'user723', 5.5, 'description');");
     }
 
-    @Override
-    public boolean updateReview(String imdbIdentifier, Admin author, int oldReviewId, String reviewText, double rating) {
-        return false;
+    public List<Review> getReviews(String filmIdentifier) throws SQLException {
+        List<Review> filmReviews = new ArrayList<>();
+        PreparedStatement preparedStatement = DBconnection.getPreparedStatement("SELECT * FROM Review WHERE filmIdentifier = ?");
+        preparedStatement.setString(1,filmIdentifier);
+        User user = new User(); //TODO pizdec
+        ResultSet queryResult = preparedStatement.executeQuery();
+        while (queryResult.next()) {
+            Review review = new Review(
+                    queryResult.getDate("createDate").toLocalDate(),
+                    user,
+                    queryResult.getString("reviewText"),
+                    queryResult.getDouble("rating")
+            );
+            filmReviews.add(review);
+        }
+        return filmReviews;
     }
 
-    @Override
-    public boolean deleteReview(String imdbIdentifier, Admin author, int reviewId) {
-        return false;
+    public boolean addReview(String imdbIdentifier, User user, String reviewText, double rating) throws SQLException {
+        LocalDate currentDate = LocalDate.now();
+        PreparedStatement preparedStatement = DBconnection.getPreparedStatement("INSERT INTO Review VALUES (NULL, ?, '"+currentDate+"', ?, ?, ?);");
+        preparedStatement.setString(1,imdbIdentifier);
+        preparedStatement.setString(2,user.getLogin());
+        preparedStatement.setDouble(3,rating);
+        preparedStatement.setString(4,reviewText);
+        return preparedStatement.execute();
     }
 
     public List<Film> searchFilmByField(String field,String value) throws SQLException {

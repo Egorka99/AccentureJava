@@ -1,9 +1,8 @@
 package com.AccentureJava.FilmsProject.Controller;
 
-import com.AccentureJava.FilmsProject.Interfaces.UserOperation;
 import com.AccentureJava.FilmsProject.Model.User;
 
-public class UserOperationImpl implements UserOperation {
+public class UserOperationImpl {
 
     private static UserOperationImpl instance = null;
 
